@@ -1,0 +1,152 @@
+.parent-container {
+    /* background-color: grey; */
+    position: relative;
+    /* display: flex; */
+    transform: translate3d(214px, 0px, 0px);
+  }
+  
+  .slick-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+  }
+  
+  .prev-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #89aeff;
+    border: 5px solid;
+    border-radius: 5px;
+  }
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #89aeff;
+    border: 5px solid;
+    border-radius: 5px;
+  }
+  
+  .previous-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
+  .square-item h3 {
+    margin: 0;
+  }
+  .slick-current{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='2' ry='2' stroke='black' stroke-width='2' stroke-dasharray='4' stroke-dashoffset='6' stroke-linecap='butt'/%3e%3c/svg%3e");
+  }
+  .square-item {
+    width: 615px !important;
+    height: 600px;
+    background-color: #f2d7ee;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
+    position: relative;
+    /* background-image: url(https://www.aicarousels.com/img/wave_black.png); */
+  }
+  .slick-slide.slick-active.slick-current{
+    width: auto !important;
+}
+.slick-slide.slick-active{
+    width: auto !important;
+  }
+
+  main.card-render {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    padding-top: 42px;
+    background-color: #f2d7ee;
+}
+.emoji-area {
+    height: 290px;
+}
+.subtitle-text{
+    margin-block-start: 1em !important;
+    margin-block-end: 1em !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+}
+h1{
+    margin: 0;
+}
+.emoji-area{
+    text-align: right;
+    font-size: 13rem;
+    line-height: 1;
+    opacity: 1 !important;
+    z-index: 99999;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center;
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; */
+}
+.next-btn {
+    background: rgb(79, 74, 124);
+    padding: 8px;
+    border-radius: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+button.next-button:disabled, button.prev-button:disabled {
+    background: #dedede;
+    border: 0;
+    /* z-index: 0; */
+}
+.card-number {
+    display: flex;
+    justify-content: center;
+}
+.cirlce {
+    background: yellow;
+    display: flex;
+    padding: 1px;
+    border-radius: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.slide-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

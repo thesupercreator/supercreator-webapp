@@ -1,0 +1,39 @@
+main.intro-card-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: white;
+    border-top: 0.8rem solid #e1e1e1;
+    padding-bottom: 2rem;
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    border-left: 0.1rem solid #efe5fd;
+    border-right: 0.1rem solid #efe5fd;
+}
+.title-area, .subtitle-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.toggle-area{
+    display: flex;
+    gap: 1rem;
+}
+input[type="text"] {
+    height: 2rem;
+    border-radius: 8px;
+    border-color: #4b4b4b2e;
+    border-width: 1px;
+}
+input[type="text"]:focus {
+    box-shadow: 0 0 0px 0.3rem #f4ebff;
+    border-color: #D6BBFB;
+    outline: none;
+}
+h5{
+    margin: 0;
+}
+h2{
+    margin: 0;
+}

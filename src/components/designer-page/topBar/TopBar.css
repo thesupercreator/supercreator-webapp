@@ -1,0 +1,13 @@
+.top-bar{
+    box-sizing: border-box;
+    position: absolute;
+    height: 71.03px;
+    left: 0px;
+    right: 0px;
+    top: -71.03px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EFE5FD;
+    height: 8rem;
+    display: flex;
+    z-index: 1;
+}
