@@ -170,34 +170,59 @@ export const section6Content = {
   title: "Time to level up your content creation game...",
   ITEMS: [
     {
-      title: "Aggregation Protocol",
+      title: "A.I. Content Writer",
       subtitle:
-        "Liquidity aggregation from multiple DEXes to ensure the best swap rates.",
+        "Select a subject or input existing material and allow the AI to craft an engaging carousel on your behalf. Customize it according to your preferences as necessary.",
       image: Sec6Image1,
     },
     {
-      title: "Limit Order Protocol",
+      title: "No Need for Design Skills",
       subtitle:
-        "The most innovative and flexible limit order functionality in DeFi.",
+          "Our intuitive design platform enables individuals without design expertise to easily generate visually appealing carousels with ease.",
       image: Sec6Image2,
     },
     {
-      title: "Liquidity Protocol",
+      title: "A.I. Caption Generator",
       subtitle:
-        "A next-generation AMM that offers capital efficiency to liquidity providers.",
+          "Generate SEO optimised captions based on the content to increase the engagement on your posts.",
+      image: Sec6Image4,
+    },
+    {
+      title: "Auto Resizer",
+      subtitle:
+        "Save valuable time and energy by utilizing auto-resizing elements that guarantee flawless placement and easily readable font sizes, eliminating the need for manual adjustments.",
       image: Sec6Image3,
     },
     {
-      title: "1inch Earn",
+      title: "A.I. Hashtag generator",
       subtitle:
-        "A derivative-based product offering liquidity providers attractive APYs.",
+          "Generate SEO optimised hashtags based on the content to increase the engagement on your posts.",
       image: Sec6Image4,
     },
-    // {
-    //   title: "1inch RabbitHole",
-    //   subtitle: "A feature that protects MetaMask users from sandwich attacks.",
-    //   image: Sec6Image5,
-    // },
+    {
+      title: "100+ color and font presets",
+      subtitle:
+        "Achieve cohesive designs effortlessly using our carefully curated color palettes and font combinations, eliminating the guesswork of finding visually pleasing combinations. Enhance your SEO strategy with harmonious design choices for optimal visual appeal.",
+      image: Sec6Image4,
+    },
+    {
+      title: "Customizable templates",
+      subtitle:
+          "Customize your carousel template to highlight your brand, ensuring a consistent visual identity across all social media platforms, reflecting your unique branding and maintaining a cohesive presence across diverse channels.",
+      image: Sec6Image4,
+    },
+    {
+      title: "Save & Load Custom Presets",
+      subtitle:
+          "Create your carousel once, save it as a template, and streamline future creations to save precious time.",
+      image: Sec6Image4,
+    },
+    {
+      title: "Meme formats",
+      subtitle:
+          "Create your carousel once, save it as a template, and streamline future creations to save precious time.",
+      image: Sec6Image5,
+    }
   ],
 };
 
@@ -207,21 +232,26 @@ export const section7Content = {
   ITEMS: [
     {
       title: "Standard",
-      subtitle:
-        "A cutting-edge discovery and routing algorithm that offers non-custodial asset swaps at the most attractive rates in major DeFi ecosystems.",
+      price: "$9.99",
+      features:
+          ["- No Watermark",
+            "- Unlimited Downloads",
+            "- Load your Custom Templates",
+            "- AI-Powered Carousel Generator"],
       image: Sec7Image1,
     },
     {
       title: "Ultra Pro Max",
-      subtitle:
-        "- No Watermark \n" +
-          "- Unlimited Downloads\n" +
-          "- supercreator-webapp with up to 30 slides\n" +
-          "- Load your Custom Templates\n" +
-          "- AI-Powered Carousel Generator\n" +
-          "- Generate from Topic\n" +
-          "- Generate from Content (Blogs, Reddit, Twitter threads, etc.)\n" +
-          "- 12 languages (EN, ES, FR, DE, IT, NL, PT, SV, DA, NO, PL, TR)",
+      price:"$14.99",
+      features:
+        ["- No Watermark",
+          "- Unlimited Downloads",
+          "- Create posts with up to 20 slides",
+          "- Load your Custom Templates",
+          "- AI-Powered Carousel Generator",
+          "- Generate from Topic",
+          "- Generate from Content (Blogs, Reddit, Twitter threads, etc.)",
+          "- 12 languages (EN, ES, FR, DE, IT, NL, PT, SV, DA, NO, PL, TR)"],
       image: Sec7Image2,
     },
   ],
@@ -389,9 +419,7 @@ export const footerContent = {
     { icon: GitHubIcon },
   ],
   copyright: {
-    left: "© 2023 1inch, All Rights Reserved.",
-    center: "ENS: 1inch.eth",
-    right: "BUIDL @ETHNewYork 2019",
+    center: "© 2023 SuperCreator, All Rights Reserved."
   },
 };
 

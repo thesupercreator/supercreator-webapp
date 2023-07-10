@@ -11,6 +11,7 @@ import React from "react";
 import OutlinedButton from "../components/landing-page/Buttons/OutlinedButton";
 import Title from "../components/landing-page/Title";
 import { section5Content } from "../utils/content";
+import {Parallax} from "react-scroll-parallax";
 
 const { BannerBgImage, BannerBgImageMobile, title, subtitle } = section5Content;
 
@@ -19,7 +20,8 @@ const Section5 = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Container sx={{ mt: { xs: 10, md: 20, lg: 25 } }}>
+      // <Parallax speed={-10} translateX={['100px', '-50px']}>
+    <Container sx={{ mt: { xs: 10, md: 20, lg: 25 }, height:"80vh", width:"100vw", }}>
       <Box
         sx={{
           position: "relative",
@@ -76,6 +78,7 @@ const Section5 = () => {
         </Grid>
       </Box>
     </Container>
+      // </Parallax>
   );
 };
 

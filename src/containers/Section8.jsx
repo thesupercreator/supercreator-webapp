@@ -3,6 +3,7 @@ import React from "react";
 import OutlinedButton from "../components/landing-page/Buttons/OutlinedButton";
 import Title from "../components/landing-page/Title";
 import { section8Content } from "../utils/content";
+import {Parallax} from "react-scroll-parallax";
 
 const { title, subtitle, caption, ShieldImage } = section8Content;
 
@@ -24,6 +25,7 @@ const Section8 = () => {
         >
           {subtitle}
         </Typography>
+        {/*<Parallax speed={-10} rotateY={["0", "360"]}>*/}
 
         <Box sx={{ px: { xs: 2, md: 5, lg: 7 } }}>
           <img
@@ -31,7 +33,7 @@ const Section8 = () => {
             style={{ width: "100%", objectFit: "contain" }}
           />
         </Box>
-
+        {/*</Parallax>*/}
         <Typography
           variant="body2"
           color="text.secondary"

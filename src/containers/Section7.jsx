@@ -3,6 +3,7 @@ import React from "react";
 import ServiceCard from "../components/landing-page/Cards/ServiceCard";
 import Title from "../components/landing-page/Title";
 import { section7Content } from "../utils/content";
+import PricingServiceCard from "../components/landing-page/Cards/PricingServiceCard.jsx";
 
 const { title, subtitle, ITEMS } = section7Content;
 
@@ -21,10 +22,10 @@ const Section7 = () => {
         {subtitle}
       </Typography>
 
-      <Grid container spacing={3}>
+      <Grid container height="70vh" spacing={3}>
         {ITEMS.map((item) => (
-          <Grid item xs={12} md={6} key={item.title}>
-            <ServiceCard {...item} />
+          <Grid item xs={12} md={6}  key={item.title}>
+              <PricingServiceCard {...item} />
           </Grid>
         ))}
       </Grid>

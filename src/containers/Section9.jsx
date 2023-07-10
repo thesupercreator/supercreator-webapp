@@ -10,6 +10,7 @@ const { title, ITEMS } = section9Content;
 import SupermanImg from "../assets/images/section4/news-image.webp";
 const Section9 = forwardRef((props,ref) => {
 
+    const [waitlistSuccess, setWaitlistSuccess] = React.useState(false);
   return (
     <Container ref={ref} sx={{ mt: { xs: 10, md: 20, lg: 25 } }}>
         <Container sx={{ textAlign: "left" }}>
@@ -32,7 +33,11 @@ const Section9 = forwardRef((props,ref) => {
             <Grid item xs={12} md={6}>
 
 
-                <WaitlistServiceCard  />
+                { !waitlistSuccess?<WaitlistServiceCard success={setWaitlistSuccess}  />:<Container maxWidth="100vw" maxHeight="100vh">
+                <Title variant={{ xs: "h4", md: "h3" }} sx={{ textAlign: "center" }}>
+                   Thank you showing interest!
+                </Title>
+            </Container>}
             </Grid>
 
             {/* Right */}

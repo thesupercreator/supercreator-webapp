@@ -6,7 +6,7 @@ const { SOCIALS } = section10Content;
 
 const Section10 = () => {
   return (
-    <Container maxWidth="md" sx={{ mt: { xs: 10, md: 20, lg: 25 } }}>
+    <Container maxWidth="md" sx={{ mt: { xs: 10, md: 20, lg: 15 }, mb: { xs: 10, md: 20, lg: 15 } }}>
       <Title
         variant={{ xs: "h3", md: "h2" }}
         sx={{ textAlign: "center", mb: { xs: 5 } }}

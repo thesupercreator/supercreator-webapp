@@ -3,12 +3,14 @@ import { Stack } from "@mui/system";
 import Title from "../components/landing-page/Title";
 import { section3Content } from "../utils/content";
 import {forwardRef} from "react";
+import {Parallax} from "react-scroll-parallax";
 
 const { title, ITEMS } = section3Content;
 
 const Section3 = forwardRef((refs) => {
 
   return (
+      // <Parallax speed={-10} translateX={['-50px', '100px']}>
     <Container sx={{height:"80vh", width:"100vw",mt: { xs: 10, md: 20 } , alignItems:"center"}}>
         <Grid container spacing={8} flexWrap="wrap-reverse" alignItems="center">
             {/* Left */}
@@ -51,6 +53,7 @@ const Section3 = forwardRef((refs) => {
         </Grid>
 
     </Container>
+      // </Parallax>
   );
 });
 

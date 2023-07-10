@@ -1,10 +1,43 @@
 import { Box, Stack, Typography } from "@mui/material";
 import Title from "../Title";
-import CustomInput from "../Input/CustomInput.jsx";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight.js";
-import LaunchButton from "../Buttons/LaunchButton.jsx";
+import SubmitButton from "../Buttons/SubmitButton.jsx";
+import FormInput from "../Input/FormInput.jsx";
+import axios from "axios";
+import {useState} from "react";
 
-const WaitlistServiceCard = () => {
+
+const WaitlistServiceCard = ({success}) => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        // Create an object with name and email data
+        const data = {
+            name,
+            email
+        };
+        const config = {
+            'Access-Control-Allow-Origin':'*'
+        }
+        //axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+        axios.defaults.headers.post['Content-Type'] ='application/json';
+        // Send a POST request to the API endpoint
+        await  axios.post('https://us-central1-supercreator-webapp.cloudfunctions.net/api/users', data)
+            .then((response) => {
+                console.log('Data sent successfully!', response.data);
+                setName('');
+                setEmail('');
+            })
+            .catch((error) => {
+                console.error('Error sending data:', error);
+                setName('');
+                setEmail('');
+            });
+success(true);
+    };
   return (
     <Box
       sx={{
@@ -27,22 +60,22 @@ const WaitlistServiceCard = () => {
         },
       }}
     >
+        <form onSubmit={handleSubmit}>
       <Stack sx={{ height: "100%"}} spacing={1}>
           <Title variant={{ xs: "h4", md: "h4" }}>Name</Title>
 
           <Typography variant="body2" color="text.secondary">
-              <CustomInput placeholder="Your name"/>
+              <FormInput type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name"/>
           </Typography>
         <Title variant={{ xs: "h4", md: "h4" }}>Email</Title>
 
         <Typography variant="body2" color="text.secondary">
-            <CustomInput placeholder="Your email" />
+            <FormInput type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Your email" />
         </Typography>
 
-
-
-          <LaunchButton sx={{borderRadius: 3, width:"30vh"}} text="Request Access" icon={KeyboardArrowRightIcon}/>
+          <SubmitButton sx={{ height: 60, my: 5 }} type="submit" text="Request Access" icon={KeyboardArrowRightIcon}/>
       </Stack>
+        </form>
     </Box>
   );
 };

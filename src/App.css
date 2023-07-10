@@ -48,3 +48,7 @@
 /*  color: #888;*/
 /*}*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
